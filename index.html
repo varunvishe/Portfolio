@@ -20,7 +20,7 @@
         <ul>
             <li><a href="#" target="_main" class="navlink">Resume</a></li>
             <li><a href="https://github.com/varunvishe" target="_main" class="navlink"> <i class="fa-brands fa-github fa"></i></a>
-            <li><a href="#" target="_main" class="navlink"> <i class="fa-brands fa-linkedin fa"></i></a>
+            <li><a href="https://www.linkedin.com/in/varunvishe" target="_main" class="navlink"> <i class="fa-brands fa-linkedin fa"></i></a>
         </ul>
         </nav>
     </header>
@@ -34,10 +34,8 @@
         </div>
         <div class="bodyname">
             <p class="bodynametext">Varun Vishe | Software Developer</p>
-            <div class="projecttitle">
-                <p class="projects">Projects</p>
-                </div>
-                <div class="project">
+            
+                <div class="arrow">
                 <i class="fa-solid fa-chevron-down"></i>
             </div>
         </div>
@@ -46,6 +44,103 @@
 
         </div>
     </div>
+    <div class="project-section">
+        
+        <div class="project" id="project1">
+            <div class="project-image"></div>
+            <div class="project-details">
+                <h3 class="project-title">Project 1</h3>
+                <p class="project-description">Description for project 1.</p>
+                <p class="project-tech">Technologies: HTML, CSS, JavaScript</p>
+                <a class="project-link" href="#">View Code</a>
+            </div>
+        </div>
+        <div class="project" id="project2">
+            <div class="project-image"></div>
+            <div class="project-details">
+                <h3 class="project-title">Project 2</h3>
+                <p class="project-description">Description for project 2.</p>
+                <p class="project-tech">Technologies: HTML, CSS, JavaScript</p>
+                <a class="project-link" href="#">View Code</a>
+            </div>
+        </div>
+        <div class="project" id="project3">
+            <div class="project-image"></div>
+            <div class="project-details">
+                <h3 class="project-title">Project 3</h3>
+                <p class="project-description">Description for project 3.</p>
+                <p class="project-tech">Technologies: HTML, CSS, JavaScript</p>
+                <a class="project-link" href="#">View Code</a>
+            </div>
+        </div>
+        <div class="project" id="project4">
+            <div class="project-image"></div>
+            <div class="project-details">
+                <h3 class="project-title">Project 3</h3>
+                <p class="project-description">Description for project 3.</p>
+                <p class="project-tech">Technologies: HTML, CSS, JavaScript</p>
+                <a class="project-link" href="#">View Code</a>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>Connect with me</h1>
+    <div class="connect">
+        <a href="https://www.instagram.com/varun__.106" ><i class="fa-brands fa-instagram" fa-xs></i></a>
+        <a href="mailto:varun7vishe7@gmail.com" > <i class="fa-regular fa-envelope"></i></a>
+
+        <a href="https://www.linkedin.com/in/varunvishe"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/varunvishe" ><i class="fab fa-github-square"></i></a>
+    </div>
+        </div>
+    </div>
+    
 </body>
+<script>
+    const projects = [
+        {
+            image: 'url(img/rpc.png)',
+            title: 'Rock paper scissors',
+            description: 'Play the classic game of Rock, Paper, Scissors on our website for endless fun!.',
+            technologies: 'HTML, CSS, JavaScript',
+            link: 'https://github.com/varunvishe/Rock-Paper-Scissors'
+        },
+        {
+            image: 'url(img/drum_kit.png)',
+            title: 'Drum Kit',
+            description: 'Experience the thrill of drumming by pressing keys to play realistic drum kit sounds on our website!.',
+            technologies: 'HTML, CSS, JavaScript',
+            link: 'https://github.com/varunvishe/Drum-kit'
+        },
+        {   image: 'url(img/todolist.PNG)',
+            title: 'TO-DO List',
+            description: 'Simplifing To-Do Management',
+            technologies: 'HTML, CSS, JavaScript',
+            link: 'https://github.com/varunvishe/Todo-List'
+           
+        },
+        {
+            image: 'url(img/Portfolio.png)',
+            title: 'Portfolio Site',
+            description: 'A portfolio website to showcase my projects.',
+            technologies: 'HTML, CSS, JavaScript',
+            link: 'https://github.com/varunvishe/Portfolio'
+        }
+    ];
+
+    function updateProjectDetails() {
+        projects.forEach((project, index) => {
+            const projectElement = document.getElementById(`project${index + 1}`);
+            projectElement.querySelector('.project-image').style.backgroundImage = project.image;
+            projectElement.querySelector('.project-title').textContent = project.title;
+            projectElement.querySelector('.project-description').textContent = project.description;
+            projectElement.querySelector('.project-tech').textContent = `Technologies: ${project.technologies}`;
+            projectElement.querySelector('.project-link').href = project.link;
+        });
+    }
+
+    // Call the function to update details on page load
+    window.onload = updateProjectDetails;
+</script>
+
 
 </html>
