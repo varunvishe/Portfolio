@@ -79,6 +79,87 @@
     font-size: 85px;
     font-weight: 600;
 }
+
+/* .project {
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+} */
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    
+    width: 80%;
+    margin: 20px 0;
+    
+}
+
+.project-image {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2.1);
+    width: 100%;
+    height: 450px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.project-details {
+    padding: 15px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.project-title {
+    color: white;
+    font-size: 45px;
+    font-weight: normal;
+}
+
+.project-description {
+    color: white;
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.project-tech {
+    color: white;
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 3px 7px;
+    background-color: white;
+    color: #000;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 25px
+}
+
+.project-link:hover {
+    background-color:#f4db3b ;
+    color: black;
+}
+
+
+
+
+
+
 /* rainbow effect */
 @keyframes rainbow {
     0% {
@@ -101,6 +182,7 @@
         color: #09f;
     }
 }
+
 #h4{
     animation: rainbow 10s ease 0s infinite alternate none running;
 }
@@ -120,15 +202,16 @@
 
 .bodynametext {
     color: white;
-    font-size: 22px;
+    font-size: 40px; /* changed size */
     font-weight: 500;
 }
 /* footer area */
-.projecttitle {
+.arrow{
     display: flex;
     justify-content: center;
     margin-top: 25px;
     color: #6aed76;
+    
     
 }
 
@@ -338,5 +421,47 @@
 }
 
 
+/* FOOTER  */
+.footer {
+    background-color:transparent;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 50px;
+}
+.connect {
+    /* font-weight: 100; */
+    color: white;
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
 
+.connect a {
+    
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.connect a:hover {
+    opacity: 5.8;
+}
+
+.connect a svg {
+    width: 60px;
+    height: 60x;
+}
 
